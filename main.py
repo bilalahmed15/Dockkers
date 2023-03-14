@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
-app = Flask(__name__)#name of directory
+app = Flask(__name__) #name of directory
 model = pickle.load(open('finalized_model.sav','rb'))
 
 #route
